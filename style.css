@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  --font-family-1: "Red Hat Display", sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: var(--font-family-1);
+  background-color: #E1E9FF;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  
+}
+.box{
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info{
+    color:var( --Desaturated-blue);
+}
+.avtar{
+    background-color:var(--Very-pale-blue);
+}
+.change{
+    color:var(--Desaturated-blue);
+    cursor:pointer;
+}
+.change:hover{
+    color:var(--Bright-blue);
+    text-decoration:underline;
+}
+.btn{
+    background-color:var( --Desaturated-blue);
+    color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor:pointer
+}
+.btn:hover{
+    background-color:var(--Bright-blue);
+}
+.order{
+    color:var(--Dark-blue);
+    cursor:pointer;
+}
+.order:hover{
+    color:var(--Desaturated-blue);
+}
+@media (min-width:320px){
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+    }
+}
